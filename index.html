@@ -1,53 +1,63 @@
-<!DOCTYPE html>
 <html>
-
 <head>
-		<link href='http://fonts.googleapis.com/css?family=Droid+Sans|Roboto+Condensed' rel='stylesheet' type='text/css'>
-		<title>&#187;&nbsp;Newsbeard</title>
-		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js">
-		</script>
-	<link rel="stylesheet" type="text/css" href="newsbeard.css">
-</head>
-	
-<body>
+	<link href=
+	'http://fonts.googleapis.com/css?family=Droid+Sans|Roboto+Condensed' rel=
+	'stylesheet' type='text/css'>
 
-		<!-- JSON URL - http://pipes.yahoo.com/pipes/pipe.run?_id=311e78677fe7b41877e10ef76a57e3c3&_render=json
- 		-->
-	
+	<title>&#187;Newsbeard</title>
+	<script src=
+	"http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js" type=
+	"text/javascript"></script>
+	<link href="newsbeard.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<!-- JSON URL - http://pipes.yahoo.com/pipes/pipe.run?_id=http://pipes.yahoo.com/pipes/pipe.run?_id=311e78677fe7b41877e10ef76a57e3c3&_render=json
+	-->
+
 	<ul class="rss-title">
-		<li><strong>
-		<a STYLE="text-decoration:none" href="http://newsbeard.com">&#187;&nbsp;Newsbeard<a>
-		</strong></li></ul>
+		<li><strong><a href="http://newsbeard.com" style=
+		"text-decoration:none">&#187;Newsbeard<small><sup>beta</sup></small><a></a></strong></li>
+	</ul>
 
 	<div id="rssdata">
-    		
-	<ul class="rss-items"></ul>
-    	<div class="loading">&#187;&nbsp;Loading Newsbeard RSS...
-	
+		<ul class="rss-items"></ul>
 
-<script type="text/Javascript">
-	$('#rssdata').ready(function()
-{
-    var pipe_url = 'http://pipes.yahoo.com/pipes/pipe.run?_id=311e78677fe7b41877e10ef76a57e3c3&_render=json&_callback=?';
-    $.getJSON(pipe_url,function(data)
-    {
-        $(data.value.items).each(function(index,item)
-        {
-            var item_html = '<li><a href="'+item.link+'">'+item.title+'</a></li>';
-            $('#rssdata ul.rss-items').append(item_html);
-        });
-        $('#rssdata div.loading').fadeOut();
-        $('#rssdata ul.rss-items').slideDown();
-    });
-});
+		<div class="loading">
+			&#187;&nbsp;Loading Newsbeard... <script type=
+			"text/Javascript">
+$('#rssdata').ready(function()
+			{
+			var pipe_url = 'http://pipes.yahoo.com/pipes/pipe.run?_id=311e78677fe7b41877e10ef76a57e3c3&_render=json&_callback=?';
+			$.getJSON(pipe_url,function(data)
+			{
+			$(data.value.items).each(function(index,item)
+			{
+			var item_html = '<li><a href="'+item.link+'">'+item.title+'<\/a><\/li>';
+			$('#rssdata ul.rss-items').append(item_html);
+			});
+			$('#rssdata div.loading').fadeOut();
+			$('#rssdata ul.rss-items').slideDown();
+			});
+			});
+			</script>
+		</div>
+	</div>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-40528442-1', 'newsbeard.com');
+  ga('send', 'pageview');
+
 </script>
 
-	</div>
-	</div>
-<ul class="rss-title">
-		<li><strong>
-		<a STYLE="text-decoration:none" href="http://newsbeard.com">Newsbeard<a>
-		</strong></li></ul>
-
+	<ul class="rss-footer">
+		<li><strong><a href="http://newsbeard.com" style=
+		"text-decoration:none">&#187;Newsbeard 2013 cc-by-nc-sa</a></strong></li>
+	</ul>
 </body>
 </html>
