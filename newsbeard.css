@@ -1,0 +1,67 @@
+body
+{
+background-color:#fff;
+font-family: 'Roboto Condensed', sans-serif;
+}
+
+ul.rss-title
+{
+    margin: 0;
+    padding: 0;
+}
+
+ul.rss-title li
+{
+    display: block;
+    margin: 0;
+    padding: 0;
+    text-indent:1px;
+}
+
+ul.rss-title a
+{
+    background: #f50;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: block;
+    padding: 0;
+    text-decoration: strong;
+    border-bottom: 1px solid #eee;
+    font-size: 1.5em
+} 
+
+#rssdata ul.rss-items
+{
+    display: none;
+    margin: 0;
+    padding: 0;
+    font-family: 'Droid Sans', serif;
+}
+
+#rssdata ul.rss-items li
+{
+    display: block;
+    margin: 0;
+    padding: 0;
+    text-indent:1px;
+}
+
+#rssdata ul.rss-items a
+{
+    margin: 0;
+    padding: 0;
+    display: block;
+    padding: 2px 2px;
+    background: #ccc;
+    color: #333;
+    text-decoration: none;
+    border-bottom: 1px solid #eee;
+}
+
+#rssdata ul.rss-items a:hover
+{
+    background: #f50;
+    color: #fff;
+    text-decoration: none;
+} 
