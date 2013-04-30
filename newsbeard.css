@@ -7,7 +7,6 @@ font-family: 'Droid Sans', sans-serif;
 text-decoration: none;
 }
 
-
 /*Title font styling*/
 
 ul.rss-title
@@ -76,6 +75,8 @@ ul.rss-title a
 } 
 
 
+
+
 /*RSS Footer styling*/
 
 ul.rss-footer
@@ -98,10 +99,10 @@ ul.rss-footer a
     color: #fff;
     margin: 0;
     padding: 0;
-    display: flex-box;
+    display: block;
     padding: 0;
     text-decoration: none;
+    text-align: center;
     border-bottom: 1px solid #fff;
     font-size: 1em
 } 
-
