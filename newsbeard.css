@@ -1,5 +1,4 @@
 /*Body font*/
-
 body
 {
 background-color:#fff;
@@ -7,8 +6,8 @@ font-family: 'Droid Sans', sans-serif;
 text-decoration: none;
 }
 
-/*Title font styling*/
 
+/*Title font styling*/
 ul.rss-title
 {
     margin: 0;
@@ -38,7 +37,6 @@ ul.rss-title a
 
 
 /*RSS Feed styling*/
-
 #rssdata ul.rss-items
 {
     display: none;
@@ -75,10 +73,7 @@ ul.rss-title a
 } 
 
 
-
-
 /*RSS Footer styling*/
-
 ul.rss-footer
 {
     margin: 0;
