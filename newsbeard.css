@@ -76,8 +76,16 @@ ul.rss-title a
 /*RSS Footer styling*/
 ul.rss-footer
 {
+    background: #f50;
+    color: #fff;
     margin: 0;
     padding: 0;
+    display: block;
+    padding: 0;
+    text-decoration: none;
+    text-align: center;
+    border-bottom: 1px solid #fff;
+    font-size: 1em
 }
 
 ul.rss-footer li
