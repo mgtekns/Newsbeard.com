@@ -8,21 +8,26 @@ text-decoration: none;
 
 
 /*Title font styling*/
-ul.rss-title
+ul.Title
 {
+    width: 100%;
+    height: 27px;
     margin: 0;
     padding: 0;
 }
 
-ul.rss-title li
+ul.Title li
 {
-    display: block;
+    display: inline-block;
     margin: 0;
     padding: 0;
     text-indent:1px;
+    font-size: 1.2em;
+    width: 49.4%;
 }
 
-ul.rss-title a
+
+ul.Title a
 {
     background: #f50;
     color: #fff;
@@ -32,12 +37,12 @@ ul.rss-title a
     padding: 0;
     text-decoration: strong;
     border-bottom: 1px solid #fff;
-    font-size: 2em
+    
 } 
 
 
 /*RSS Feed styling*/
-#rssdata ul.rss-items
+#WeGotMadData ul.rss-items
 {
     display: none;
     margin: 0;
@@ -45,7 +50,7 @@ ul.rss-title a
     font-family: 'Droid Sans', serif;
 }
 
-#rssdata ul.rss-items li
+#WeGotMadData ul.rss-items li
 {
     display: block;
     margin: 0;
@@ -53,7 +58,7 @@ ul.rss-title a
     text-indent:1px;
 }
 
-#rssdata ul.rss-items a
+#WeGotMadData ul.rss-items a
 {
     margin: 0;
     padding: 0;
@@ -65,7 +70,7 @@ ul.rss-title a
     border-bottom: 1px solid #fff;
 }
 
-#rssdata ul.rss-items a:hover
+#WeGotMadData ul.rss-items a:hover
 {
     background: #f50;
     color: #fff;
@@ -74,7 +79,7 @@ ul.rss-title a
 
 
 /*RSS Footer styling*/
-ul.rss-footer
+ul.Footy
 {
     background: #f50;
     color: #fff;
@@ -88,7 +93,7 @@ ul.rss-footer
     font-size: 1em
 }
 
-ul.rss-footer li
+ul.Footy li
 {
     display: block;
     margin: 0;
@@ -96,7 +101,7 @@ ul.rss-footer li
     text-indent:1px;
 }
 
-ul.rss-footer a
+ul.Footy a
 {
     background: #f50;
     color: #fff;
