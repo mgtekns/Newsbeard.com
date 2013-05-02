@@ -32,16 +32,16 @@
 
 
 	<!-- Big orange banner code -->
-	<ul class="Title">
+	<ul class="rss-title">
 		<li class="mast"><strong><a href="http://newsbeard.com/" style=
 		"text-decoration:none">&#187;Newsbeard<small><sup>beta</sup></small><a></a></strong></li>
-		<li class="refresh"><strong><a href="http://newsbeard.com/refresh.html" style=
-		"text-decoration:none">&#187;Refresh Off</a></strong></li>
+		<li class="refresh"><strong><a href="http://newsbeard.com/" style=
+		"text-decoration:none">&#187;&#9842; Off</a></strong></li>
 	</ul>
 
 
 	<!-- Div container for article list -->
-	<div id="WeGotMadData">
+	<div id="rssdata">
 		<ul class="rss-items"></ul>
 
 
@@ -52,7 +52,7 @@
 
 	<!-- jQuery content grabber from Pipes -->
 	<script type="text/Javascript">
-		$('#WeGotMadData').ready(function()
+		$('#rssdata').ready(function()
 			{
 			var pipe_url = 'http://pipes.yahoo.com/pipes/pipe.run?_id=311e78677fe7b41877e10ef76a57e3c3&_render=json&_callback=?';
 			$.getJSON(pipe_url,function(data)
@@ -60,10 +60,10 @@
 			$(data.value.items).each(function(index,item)
 			{
 			var item_html = '<li><a href="'+item.link+'">'+item.title+'<\/a><\/li>';
-			$('#WeGotMadData ul.rss-items').append(item_html);
+			$('#rssdata ul.rss-items').append(item_html);
 			});
-			$('#WeGotMadData div.loading').fadeOut();
-			$('#WeGotMadData ul.rss-items').slideDown();
+			$('#rssdata div.loading').fadeOut();
+			$('#rssdata ul.rss-items').slideDown();
 			});
 			});
 			</script>
@@ -83,11 +83,11 @@
  	 ga('send', 'pageview');
 	</script>
 
-	
+
 
 
 	<!-- Orange footer bar for license or whatever -->
-	<ul class="Footy">
+	<ul class="rss-footer">
 	<li>	
 	<!-- OMG MOBILE ADVERTISING OH SNAP -->
 	<script type="text/javascript">
