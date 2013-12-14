@@ -10,9 +10,15 @@ text-decoration: none;
 /*Title font styling*/
 ul.rss-title
 {
-    margin: 0;
-    padding: 0;
+	 background: #f50;
+	 position:fixed;
+	 top:0px;
+	 width:99%;
+    padding: 3;
+    padding-bottom:0;
     height: 33px;
+    border-bottom: 2px solid #fff;
+    border-top: 6px solid #fff;
 }
 
 ul.rss-title li
@@ -28,11 +34,9 @@ ul.rss-title a
     background: #f50;
     color: #fff;
     margin: 0;
-    padding: 0;
     display: block;
     padding: 0;
     text-decoration: strong;
-    border-bottom: 0px solid #fff;
     font-size: 1.5em
 } 
 
@@ -42,7 +46,7 @@ ul.rss-title a
 {
     display: none;
     margin: 0;
-    padding: 0;
+    padding: 36px 0px;
     font-family: 'Droid Sans', serif;
 }
 
@@ -63,7 +67,7 @@ ul.rss-title a
     background: #ddd;
     color: #333;
     text-decoration: none;
-    border-bottom: 1px solid #fff;
+    border-bottom: 2px solid #fff;
 }
 
 #rssdata ul.rss-items a:hover
@@ -79,10 +83,10 @@ ul.rss-footer
 {
     background: #f50;
     color: #fff;
-    margin: 0;
-    padding: 0;
+    
+    height: 91px;
+    
     display: block;
-    padding: 0;
     text-decoration: none;
     text-align: center;
     border-bottom: 1px solid #fff;
@@ -92,21 +96,8 @@ ul.rss-footer
 ul.rss-footer li
 {
     display: block;
-    margin: 0;
-    padding: 0;
+ 
     text-indent:1px;
 }
 
-ul.rss-footer a
-{
-    background: #f50;
-    color: #fff;
-    margin: 0;
-    padding: 0;
-    display: block;
-    padding: 0;
-    text-decoration: none;
-    text-align: center;
-    border-bottom: 1px solid #fff;
-    font-size: 1em
-} 
+
