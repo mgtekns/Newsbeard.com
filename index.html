@@ -8,7 +8,6 @@
 
 	<title>&#187;Newsbeard</title>
 
-
 	<!-- Meta tags are meta -->
 	<meta name="description" content="Technology News Aggregator">
 	<meta name="keywords" content="News,Technology,Gaming,Linux,Android,Tech,Nerd,Geek,HTML,CSS,XML,JavaScript">
@@ -27,33 +26,22 @@
 </head>
 
 <body>
-	<!-- JSON URL for Yahoo Pipes - http://pipes.yahoo.com/pipes/pipe.run?_id=http://pipes.yahoo.com/pipes/pipe.run?_id=311e78677fe7b41877e10ef76a57e3c3&_render=json
-	-->
-
 
 	<!-- Big orange banner code -->
-	<ul class="rss-title">
-		<li style="float:left">
-		<strong>
+	<div class="rss-title">
 		<a href="http://newsbeard.com/" style=
-		"text-decoration:none">&#187;Newsbeard</a></strong></li>
-	</ul>
+		"text-decoration:none" ><strong>&#187;Newsbeard</strong></a>
+	</div>
 
 	
 	<!-- Div container for article list -->
 	<div id="rssdata">
 		<ul class="rss-items"></ul>
-
-
 	<!-- Loading message -->
 		<div class="loading">		
-			<center></strong>&#187;Loading Newsbeard...
+			<center><strong>&#187;Loading Newsbeard...
 			<!-- Orange footer bar for license or whatever -->
-			<!-- OMG responsive ADVERTISING OH SNAP -->
-	</li></ul></center></strong> 
-	<!-- OMG END OF responsive ADVERTISING OH SNAP -->
-
-
+	</ul></center></strong> 
 	<!-- jQuery content grabber from Pipes -->
 	<script type="text/Javascript">
 		$('#rssdata').ready(function()
@@ -63,7 +51,7 @@
 			{
 			$(data.value.items).each(function(index,item)
 			{
-			var item_html = '<li><a href="'+item.link+'">'+item.title+'<\/a><\/li>';
+			var item_html = '<a href="'+item.link+'">'+item.title+'<\/a>';
 			$('#rssdata ul.rss-items').append(item_html);
 			});
 			$('#rssdata div.loading').fadeOut();
@@ -73,7 +61,6 @@
 			</script>
 		</div>
 	</div>
-
 
 	<!-- Google analytics -->
 	<!-- Replace this with your own code if you use this -->
@@ -89,7 +76,7 @@
 
 <!-- Orange footer bar for license or whatever -->
 	<ul class="rss-footer">
-	<li>	
+	
 	<!-- OMG responsive ADVERTISING OH SNAP -->
 	<style>
 .newnewsbeardresp { width: 320px; height: 50px; }
@@ -105,6 +92,6 @@
 <script>
 (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
-	</li></ul>
+	</ul>
 </body>
 </html>
