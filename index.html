@@ -28,20 +28,20 @@
 <body>
 
 	<!-- Big orange banner code -->
+	
 	<div class="rss-title">
 		<a href="http://newsbeard.com/" style=
 		"text-decoration:none" ><strong>&#187;Newsbeard</strong></a>
 	</div>
-
 	
 	<!-- Div container for article list -->
 	<div id="rssdata">
 		<ul class="rss-items"></ul>
 	<!-- Loading message -->
 		<div class="loading">		
-			<center><strong>&#187;Loading Newsbeard...
-			<!-- Orange footer bar for license or whatever -->
-	</ul></center></strong> 
+			<center><br>
+			<img src="loading.gif">
+			</center></ul>
 	<!-- jQuery content grabber from Pipes -->
 	<script type="text/Javascript">
 		$('#rssdata').ready(function()
@@ -55,6 +55,7 @@
 			$('#rssdata ul.rss-items').append(item_html);
 			});
 			$('#rssdata div.loading').fadeOut();
+			$('rssdata ul.rss-items').fadeIn();
 			$('#rssdata ul.rss-items').slideDown();
 			});
 			});
@@ -77,14 +78,14 @@
 <!-- Orange footer bar for license or whatever -->
 	<ul class="rss-footer">
 	
-	<!-- OMG responsive ADVERTISING OH SNAP -->
 	<style>
 .newnewsbeardresp { width: 320px; height: 50px; }
 @media(min-width: 500px) { .newnewsbeardresp { width: 468px; height: 60px; } }
 @media(min-width: 800px) { .newnewsbeardresp { width: 728px; height: 90px; } }
 </style>
+
 <script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- NewNewsbeardResp -->
+
 <ins class="adsbygoogle newnewsbeardresp"
      style="display:inline-block"
      data-ad-client="ca-pub-3251177579129524"
@@ -93,5 +94,6 @@
 (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 	</ul>
-</body>
+
+ </body>
 </html>

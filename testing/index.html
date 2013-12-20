@@ -8,11 +8,10 @@
 
 	<title>&#187;Newsbeard</title>
 
-
 	<!-- Meta tags are meta -->
 	<meta name="description" content="Technology News Aggregator">
 	<meta name="keywords" content="News,Technology,Gaming,Linux,Android,Tech,Nerd,Geek,HTML,CSS,XML,JavaScript">
-	<meta name="author" content="James Kegel">
+	<meta name="author" content="user" >
 	<meta charset="UTF-8">
 
 
@@ -27,29 +26,22 @@
 </head>
 
 <body>
-	<!-- JSON URL for Yahoo Pipes - http://pipes.yahoo.com/pipes/pipe.run?_id=http://pipes.yahoo.com/pipes/pipe.run?_id=311e78677fe7b41877e10ef76a57e3c3&_render=json
-	-->
-
 
 	<!-- Big orange banner code -->
-	<ul class="rss-title">
-		<li class="mast" style="float:left"><strong><a href="http://newsbeard.com/" style=
-		"text-decoration:none">&#187;Newsbeard<small><sup>beta</sup></small><a></a></strong></li>
-		<li class="refresh"  style="float:right"><a href="http://newsbeard.com/refresh.html" style=
-		"text-decoration:none">&nbsp;&nbsp;<img src="rec.png" height=24px width=24px> Off&nbsp;</a></li>
-	</ul>
-
-
+	
+	<div class="rss-title">
+		<a href="http://newsbeard.com/" style=
+		"text-decoration:none" ><strong>&#187;Newsbeard</strong></a>
+	</div>
+	
 	<!-- Div container for article list -->
 	<div id="rssdata">
 		<ul class="rss-items"></ul>
-
-
 	<!-- Loading message -->
-		<div class="loading">
-			<center></strong>&#187;Loading Newsbeard...</center></strong> 
-
-
+		<div class="loading">		
+			<center><br>
+			<img src="loading.gif">
+			</center></ul>
 	<!-- jQuery content grabber from Pipes -->
 	<script type="text/Javascript">
 		$('#rssdata').ready(function()
@@ -59,17 +51,17 @@
 			{
 			$(data.value.items).each(function(index,item)
 			{
-			var item_html = '<li><a href="'+item.link+'">'+item.title+'<\/a><\/li>';
+			var item_html = '<a href="'+item.link+'">'+item.title+'<\/a>';
 			$('#rssdata ul.rss-items').append(item_html);
 			});
 			$('#rssdata div.loading').fadeOut();
+			$('rssdata ul.rss-items').fadeIn();
 			$('#rssdata ul.rss-items').slideDown();
 			});
 			});
 			</script>
 		</div>
 	</div>
-
 
 	<!-- Google analytics -->
 	<!-- Replace this with your own code if you use this -->
@@ -83,27 +75,25 @@
  	 ga('send', 'pageview');
 	</script>
 
-
-
-
-	<!-- Orange footer bar for license or whatever -->
+<!-- Orange footer bar for license or whatever -->
 	<ul class="rss-footer">
-	<li>	
-	<!-- OMG MOBILE ADVERTISING OH SNAP -->
-	<script type="text/javascript">
-	<!--
-	google_ad_client = "ca-pub-3251177579129524";
-	/* Newsbeard */
-	google_ad_slot = "8195839875";
-	google_ad_width = 320;
-	google_ad_height = 50;
-	//-->
-	</script>
-	<script type="text/javascript"
-	src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
-	</script>
-	</li></ul>
+	
+	<style>
+.newnewsbeardresp { width: 320px; height: 50px; }
+@media(min-width: 500px) { .newnewsbeardresp { width: 468px; height: 60px; } }
+@media(min-width: 800px) { .newnewsbeardresp { width: 728px; height: 90px; } }
+</style>
 
+<script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
-</body>
+<ins class="adsbygoogle newnewsbeardresp"
+     style="display:inline-block"
+     data-ad-client="ca-pub-3251177579129524"
+     data-ad-slot="6545161873"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+	</ul>
+
+ </body>
 </html>
