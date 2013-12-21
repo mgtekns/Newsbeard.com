@@ -30,7 +30,7 @@
 	<!-- Big orange banner code -->
 	
 	<div class="rss-title">
-		<a href="http://newsbeard.com/" style=
+		<a href="index.html" style=
 		"text-decoration:none" ><strong>&#187;Newsbeard</strong></a>
 	</div>
 	
@@ -51,7 +51,7 @@
 			{
 			$(data.value.items).each(function(index,item)
 			{
-			var item_html = '<a href="'+item.link+'">'+item.title+'<\/a>';
+			var item_html = '<a href="'+item.link+'" target="_blank">&nbsp;'+item.title+'<\/a>';
 			$('#rssdata ul.rss-items').append(item_html);
 			});
 			$('#rssdata div.loading').fadeOut();

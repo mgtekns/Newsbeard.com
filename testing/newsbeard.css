@@ -10,7 +10,7 @@ html {
 
 body
 {
-background-color:#fff;
+background-color:#f50;
 font-family: 'Droid Sans', sans-serif;
 text-decoration: none;
 opacity:0.85;
@@ -19,7 +19,12 @@ opacity:0.85;
 
 /*Title font styling*/
 
-
+div.seg
+{
+	width: 300px;
+	text-align:left;
+	padding: 0px 2px 0px 0px;
+}
 div.rss-title
 {
 	 background: #f50;
@@ -72,7 +77,7 @@ div.rss-title a
     background: #ddd;
     color: #333;
     text-decoration: none;
-    border-bottom: 2px solid #fff;
+    border-bottom: 2px solid #ffe;
     
 }
 
